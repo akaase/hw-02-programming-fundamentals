@@ -2,7 +2,7 @@
 
 So, you've just installed Python! Let's put your skills to the test.
 
-n this assignment, you'll practice:
+In this assignment, you'll practice:
 
 * Declaring and using variables
 * Using mathematical operators
