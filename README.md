@@ -1,16 +1,68 @@
-# Assignment: Decoding R2D2
+# Assignment: Programming Fundamentals
 
 So, you've just installed Python! Let's put your skills to the test.
 
+This assignment will walk through the fundamental features of the Python language using short, simplified code examples.
+
+If you find yourself wondering "why would I ever write this code?" or "ok, but what is this thing _for_?", try not to panic! Today's assignment is about discovering **what** is possible in Python, not **why** those features are useful.
+
+However, if you can start to envision how you might use these features in more complicated programming scenarios, that's great!
+
+## Learning Goals
+
 In this assignment, you'll practice:
 
-* Declaring and using variables
-* Using mathematical operators
+* Creating local `.py` files and adding them to a repo
 * Running local `.py` files from your terminal
+* Declaring and using variables
+* Input and Output with `input` and `print`
+* Understanding Basic Data Types
+* Converting between Basic Data Types
+* Using mathematical operators
 
 ---
 
-# Decoding R2D2
+# Deliverables
+
+1. **Fork** the assignment repo so that you have a copy of it that belongs to you, living on Github.
+
+1. Open your Terminal and navigate to the folder for all of your development work with:
+
+   ```bash
+   cd $DEV
+   ```
+
+1. **Clone** your fork of the assignment repo onto your computer. Remember to clone _your_ fork of the repo, not the instructor's, so that you can make changes to it!
+
+   ```bash
+   git clone <git url to your fork of the assignment repo>
+   ```
+
+1. Open the assignment folder with your code editor
+
+1. Write your code and solve the problems. Remember to **save** frequently
+
+1. Run the program from the command line to check your work.
+
+   Remember that to run a program from the command line, enter:
+
+   ```bash
+   python file.py
+   ```
+
+   > **Protip**: You may need to use the `cd` command to navigate to the location where the `file.py` is saved
+
+1. Keep making changes to your code and run it again until you get the expected output. Repeat as needed!
+
+   > **Hint**: Make sure you are printing something out with the `print` statement! Otherwise, you won't see any output from running your program!
+
+1. **Commit** your changes regularly
+
+1. Finally, **push** all of the changes to Github
+
+---
+
+# Exercise 1: Decoding R2D2
 
 You are friends with a robot who communicates in a series of beeps and boops. You usually get the gist of what he means, but just once it would be nice to know what's really on his mind!
 
@@ -61,11 +113,11 @@ When you run it, the total that is printed is `8`. Now, look that up in the char
 
 According to the chart, the first letter (corresponding to `8`) is `H`! It's your job to figure out the rest of the message.
 
-In the `main.py` file, write the code to print out the numerical total for each beep-boop combo as we did above. Note the letter that the number corresponds to in a comment.
+In the (already existing) `exercise1.py` file, write the code to print out the numerical total for each beep-boop combo as we did above. Note the letter that the number corresponds to in a comment.
 
 ### Starter Code
 
-This is already in `main.py`:
+This is already inside `exercise1.py`:
 
 ```python
 beeps = 2
@@ -93,45 +145,65 @@ After you finish writing all the code, this is what we expect to be output on th
 4
 ```
 
----
+# Exercise 2
 
-# Deliverables
+**Create a new file** called `exercise2.py`. Open it up in your code editor and enter the solutions for the problems below.
 
-1. **Fork** the assignment repo so that you have a copy of it that belongs to you, living on Github.
+Try annotating your code by leaving comments (using the `#` symbol) in the file, before each of your answers to the following questions.
 
-1. Open your Terminal and navigate to the folder for all of your development work with:
+Be sure to **commit** after answering each question!
 
-   ```bash
-   cd $DEV
-   ```
+1. How would you calculate a good tip for a 55 dollar meal? Use `print` to print the numerical tip you would give.
+    > Example Output: `8.25`
 
-1. **Clone** your fork of the assignment repo onto your computer. Remember to clone *your* fork of the repo, not the instructor's, so that you can make changes to it!
+1. Now, print the tip with a `$` in front of it. You'll have to do **type conversion** to make this work.
+    > Example Output: `$8.25`
 
-   ```bash
-   git clone <git url to your fork of the assignment repo>
-   ```
+1. Outputting the result of 45628 multiplied by 7839, in a sentence. You will have to use string **interpolation**.
+    > Example Output: `The result of the mutiplication is XXXXXXXX`
 
-1. Open the assignment folder with your code editor
+1. Add a **string** and an **integer** together with the `+` operator. What happens? Find a way to convert the integer into a string before adding them together, and use `print` to print the result.
 
-1. Write your code and solve the problem. Remember to **save** frequently
+1. (**STRETCH**) What's the value of the expression `(10 < 20 and 30 < 20) or not (10 == 11)`? Try figuring it out on your own before typing it in. (This is a hard one, don't worry if you can't get it, but please try!)
 
-1. Run the program from the command line to check your work against the **Expected Output** you saw earlier.
+# Exercise 3
 
-   Remember that to run a program from the command line, enter:
+Let's make a Python program that greets someone by name.
 
-   ```bash
-   python main.py
-   ```
+**Create a new file** called `exercise3.py` and open it up in your code editor.
 
-   > **Protip**: You may need to use the `cd` command to navigate to the location where the `main.py` is saved
+Start with displaying a question:
 
-1. Keep making changes to your code and run it again until you get the expected output. Repeat as needed!
+```python
+print('What is your name?')
+```
+Run your program to verify that it works so far. If it works, **commit** what you've got so far with a meaningful commit message.
 
-   > **Hint**: Make sure you are printing something out with the `print` statement! Otherwise, you won't see any output from running your program!
+The next step is to get input from your hypothetical user (for now the user is just you!).
 
-1. **Commit** your changes regularly
+We can do that with `input()`.
 
-1. Finally, **push** the changes to Github
+`input()` will pause the execution of your program and give your user the chance to type something into their terminal.  When the user finishes typing and hits "enter", the value that they typed in is **returned** by `input()` and your program resumes normal execution.
+
+Try assigning `input()` to a variable in order to save your user's input.
+
+```python
+print('What is your name?')
+user_name = input()
+print(f'Hello, {user_name}')
+```
+
+Note that `input()` always gives back the user's input *as a string*.
+
+Having that input string stored in a variable allows us to display it back to the user later on.
+
+### Your Challenge
+
+Ask the user how old they are, and have the program output what year **they were born in**.
+
+For example, if the user enters `19`, the output should be something like `You were born in the year 2000`.
+
+Don't forget to commit your work again!
 
 ---
 
