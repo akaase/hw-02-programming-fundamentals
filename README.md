@@ -211,7 +211,7 @@ Don't forget to commit your work again!
 
 To submit this assignment:
 
-1. Go to the [assignment's main repo](../..)
+1. Go to the **assignment's main repo** (not your fork)
 1. Click the **Issues** tab
 1. Click the **New Issue** button
 1. In the Title field, fill in your name
