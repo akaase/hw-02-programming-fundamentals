@@ -32,13 +32,27 @@ In this assignment, you'll practice:
    cd $DEV
    ```
 
-1. **Clone** your fork of the assignment repo onto your computer. Remember to clone _your_ fork of the repo, not the instructor's, so that you can make changes to it!
+1. **Clone** your fork of the assignment repo onto your computer.
+
+   Remember to clone _your_ fork of the repo, not the instructor's, so that you can make changes to it!
+
+   **Protip:** Replace YOUR_USERNAME with your actual Github user name
 
    ```bash
-   git clone <git url to your fork of the assignment repo>
+   git clone https://git.generalassemb.ly/YOUR_USERNAME/hw-02-programming-fundamentals.git
+   ```
+
+1. Navigate inside the folder of the newly cloned assignment repo:
+
+   ```bash
+   cd hw-02-programming-fundamentals
    ```
 
 1. Open the assignment folder with your code editor
+
+   ```bash
+   code .
+   ```
 
 1. Write your code and solve the problems. Remember to **save** frequently
 
@@ -117,7 +131,7 @@ In the (already existing) `exercise1.py` file, write the code to print out the n
 
 ### Starter Code
 
-This is already inside `exercise1.py`:
+The following starter code is already inside `exercise1.py`:
 
 ```python
 beeps = 2
@@ -128,9 +142,11 @@ print(total) # 8 = H
 # Continue the rest of your code here!
 ```
 
+Keep writing more code where indicated!
+
 ### Expected Output
 
-After you finish writing all the code, this is what we expect to be output on the Terminal:
+After you finish writing all the code, when you run the program this is what we expect to be output on the Terminal:
 
 ```
 8
@@ -147,7 +163,7 @@ After you finish writing all the code, this is what we expect to be output on th
 
 # Exercise 2
 
-**Create a new file** called `exercise2.py`. Open it up in your code editor and enter the solutions for the problems below.
+**Create a new file** called `exercise2.py`. In it, write the solutions for the problems below.
 
 Try annotating your code by leaving comments (using the `#` symbol) in the file, before each of your answers to the following questions.
 
@@ -211,7 +227,7 @@ Don't forget to commit your work again!
 
 To submit this assignment:
 
-1. Go to the **assignment's main repo** (not your fork)
+1. In your web browser, go to the **assignment's main repo** (not your fork)
 1. Click the **Issues** tab
 1. Click the **New Issue** button
 1. In the Title field, fill in your name
