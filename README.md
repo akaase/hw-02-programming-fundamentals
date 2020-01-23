@@ -180,8 +180,6 @@ Be sure to **commit** after answering each question!
 
 1. Add a **string** and an **integer** together with the `+` operator. What happens? Find a way to convert the integer into a string before adding them together, and use `print` to print the result.
 
-1. (**STRETCH**) What's the value of the expression `(10 < 20 and 30 < 20) or not (10 == 11)`? Try figuring it out on your own before typing it in. (This is a hard one, don't worry if you can't get it, but please try!)
-
 # Exercise 3
 
 Let's make a Python program that greets someone by name.
