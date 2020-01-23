@@ -16,10 +16,3 @@ print(f'The result of the multiplication is { 45628 * 7839 }')
 my_str = 'Hello'
 my_int = 5
 print(my_str + str(my_int))
-
-# 5
-# (10 < 20 and 30 < 20) or not (10 == 11)
-# ==> (True and False) or not (False)
-# ==> (False) or True
-# ==> True
-print((10 < 20 and 30 < 20) or not (10 == 11))
